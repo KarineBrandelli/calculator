@@ -4,4 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  min-height: 100vh;
+
+  background: url("https://img.freepik.com/vetores-gratis/papel-de-parede-geometrico-de-design-grafico_52683-34399.jpg?w=1380&t=st=1670096092~exp=1670096692~hmac=867f14f74434212f667878bb841436039c68130dd8cc61a2a50b64a3af04a0a3");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
