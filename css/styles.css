@@ -44,11 +44,17 @@ td {
   padding: .25rem;
 }
 
-button {
+button {  
   background-color: #f2f2f2;
-  padding: 1rem 1.5rem;
   border-radius: 5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   border: none;
+}
+
+button:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
 }
 
 .clear, .zero {
