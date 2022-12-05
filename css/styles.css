@@ -5,8 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 body {
@@ -23,13 +22,30 @@ body {
 }
 
 .calculator-container {
-  border: 1px solid red;
-
-  width: 25rem;
+  background-color: #f6b23a;
+  border-radius: 1rem;
   margin: 1rem;
 }
 
+.result {
+  padding: 2rem 1.5rem;
+  text-align: right;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #e9e9e9;;
+  color: black;
+}
+
+table {
+  padding: .8rem;
+}
+
+td {
+  padding: .25rem;
+}
+
 button {
-  padding: 1.5rem;
-  border-radius: .5rem;
+  background-color: #f2f2f2;
+  padding: 1rem 1.5rem;
+  border-radius: 5rem;
+  border: none;
 }
