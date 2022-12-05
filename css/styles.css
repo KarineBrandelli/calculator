@@ -57,7 +57,7 @@ button:hover {
   cursor: pointer;
 }
 
-.clear, .zero {
+.zero {
   width: 8rem;
 }
 
