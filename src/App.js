@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator | React</title>
+import "./css/styles.css" 
 
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-
-  <body>
-    <main class="calculator-container">
+function App() {
+  return (
+    <div className="calculator-container">
       <div
-        class="result">
+        className="result">
       </div>
       <table>
+        <tbody>
         <tr>
           <td>
             <button>C</button>
@@ -59,7 +52,7 @@
         </tr>
         <tr>
           <td>
-            <button>1</button>
+            <button onClick={(e) => console.log(e.target.value)} value={1}>1</button>
           </td>
           <td>
             <button>2</button>
@@ -67,19 +60,22 @@
           <td>
             <button>3</button>
           </td>
-          <td rowspan="2">
-            <button class="equal">=</button>
+          <td rowSpan="2">
+            <button className="equal">=</button>
           </td>
         </tr>
         <tr>
-          <td colspan="2">
-            <button class="zero">0</button>
+          <td colSpan="2">
+            <button className="zero">0</button>
           </td>
           <td>
             <button>.</button>
           </td>
         </tr>
+        </tbody>
       </table>
-    </main>
-  </body>
-</html>
+    </div>
+  );
+}
+
+export default App;
