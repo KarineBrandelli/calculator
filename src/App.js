@@ -24,13 +24,13 @@ function App() {
         </tr>
         <tr>
           <td>
-            <button>7</button>
+            <button onClick={(e) => console.log(e.target.value)} value={7}>7</button>
           </td>
           <td>
-            <button>8</button>
+            <button onClick={(e) => console.log(e.target.value)} value={8}>8</button>
           </td>
           <td>
-            <button>9</button>
+            <button onClick={(e) => console.log(e.target.value)} value={9}>9</button>
           </td>
           <td>
             <button>-</button>
@@ -38,13 +38,13 @@ function App() {
         </tr>
         <tr>
           <td>
-            <button>4</button>
+            <button onClick={(e) => console.log(e.target.value)} value={4}>4</button>
           </td>
           <td>
-            <button>5</button>
+            <button onClick={(e) => console.log(e.target.value)} value={5}>5</button>
           </td>
           <td>
-            <button>6</button>
+            <button onClick={(e) => console.log(e.target.value)} value={6}>6</button>
           </td>
           <td>
             <button>+</button>
@@ -55,10 +55,10 @@ function App() {
             <button onClick={(e) => console.log(e.target.value)} value={1}>1</button>
           </td>
           <td>
-            <button>2</button>
+            <button onClick={(e) => console.log(e.target.value)} value={2}>2</button>
           </td>
           <td>
-            <button>3</button>
+            <button onClick={(e) => console.log(e.target.value)} value={3}>3</button>
           </td>
           <td rowSpan="2">
             <button className="equal">=</button>
@@ -66,7 +66,11 @@ function App() {
         </tr>
         <tr>
           <td colSpan="2">
-            <button className="zero">0</button>
+            <button
+              className="zero"
+              onClick={(e) => console.log(e.target.value)} value={0}>
+                0
+            </button>
           </td>
           <td>
             <button>.</button>
