@@ -10,16 +10,16 @@ function App() {
         <tbody>
         <tr>
           <td>
-            <button>C</button>
+            <button onClick={(e) => console.log(e.target.value)} value='clear'>C</button>
           </td>
           <td>
-            <button>%</button>
+            <button onClick={(e) => console.log(e.target.value)} value='%'>%</button>
           </td>
           <td>
-            <button>/</button>
+            <button onClick={(e) => console.log(e.target.value)} value='/'>/</button>
           </td>
           <td>
-            <button>*</button>
+            <button onClick={(e) => console.log(e.target.value)} value='*'>*</button>
           </td>
         </tr>
         <tr>
@@ -33,7 +33,7 @@ function App() {
             <button onClick={(e) => console.log(e.target.value)} value={9}>9</button>
           </td>
           <td>
-            <button>-</button>
+            <button onClick={(e) => console.log(e.target.value)} value='-'>-</button>
           </td>
         </tr>
         <tr>
@@ -47,7 +47,7 @@ function App() {
             <button onClick={(e) => console.log(e.target.value)} value={6}>6</button>
           </td>
           <td>
-            <button>+</button>
+            <button onClick={(e) => console.log(e.target.value)} value='+'>+</button>
           </td>
         </tr>
         <tr>
@@ -61,7 +61,7 @@ function App() {
             <button onClick={(e) => console.log(e.target.value)} value={3}>3</button>
           </td>
           <td rowSpan="2">
-            <button className="equal">=</button>
+            <button className="equal" onClick={(e) => console.log(e.target.value)} value='='>=</button>
           </td>
         </tr>
         <tr>
@@ -73,7 +73,7 @@ function App() {
             </button>
           </td>
           <td>
-            <button>.</button>
+            <button onClick={(e) => console.log(e.target.value)} value='.'>.</button>
           </td>
         </tr>
         </tbody>
