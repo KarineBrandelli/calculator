@@ -1,27 +1,24 @@
 import React, { useState } from 'react';
+import * as math from "mathjs";
 import "./css/styles.css";
 
-const arrOperacoes = ['*', '/', '+', '.', '-'];
-
 function App() {
-  const [input, setInput] = useState("");
+  const [num, setNum] = useState(0);
 
-  function insereNum(val) {
-    setInput(input + val);
-  };
-
-  function insereOperacao(val) {
-    if (input === "" |
-        (arrOperacoes.includes(input[input.length - 1]) && arrOperacoes.includes(val)))
-    { return;
+  function inputNum(e) {
+    var input = e.target.value;
+    if (num === 0) {
+      setNum(input);
     } else {
-      setInput(input + val);
+      setNum(num + input);
     }
-  };
+  }
+
+
 
   return (
     <div className="calculator-container">
-      <div className="result"></div>
+      <div className="result">{num}</div>
       <table>
         <tbody>
           <tr>
@@ -50,7 +47,7 @@ function App() {
           </tr>
           <tr>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={7}>
+              <button onClick={inputNum} value={7}>
                 7
               </button>
             </td>
