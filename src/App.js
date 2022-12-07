@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as math from "mathjs";
 import "./css/styles.css";
 
 function App() {
@@ -28,10 +27,20 @@ function App() {
     var operatorInput = e.target.value;
     setOperator(operatorInput);
     setOldNum(num);
-    setNum(num + operatorInput);
+    setNum(0);
   };
 
-
+  function calculate() {
+    if (operator === "/") {
+      setNum(parseFloat(oldnum) / parseFloat(num));
+    } else if (operator === "X") {
+      setNum(parseFloat(oldnum) * parseFloat(num));
+    } else if (operator === "-") {
+      setNum(parseFloat(oldnum) - parseFloat(num));
+    } else if (operator === "+") {
+      setNum(parseFloat(oldnum) + parseFloat(num));
+    }
+  }
 
   return (
     <div className="calculator-container">
@@ -123,8 +132,7 @@ function App() {
             <td rowSpan="2">
               <button
                 className="equal"
-                onClick={(e) => console.log(e.target.value)}
-                value="=" >
+                onClick={ calculate } >
                 =
               </button>
             </td>
