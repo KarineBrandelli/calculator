@@ -1,6 +1,9 @@
+import React, { useState } from 'react';
 import "./css/styles.css";
 
 function App() {
+  const [input, setInput] = useState("");
+
   return (
     <div className="calculator-container">
       <div className="result"></div>
