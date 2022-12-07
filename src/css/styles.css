@@ -29,11 +29,12 @@ body {
 }
 
 .result {
-  padding: 3rem 1.5rem;
+  padding: 1.5rem;
   text-align: right;
   border-radius: 1rem 1rem 0 0;
   background-color: #e9e9e9;;
   color: black;
+  font-size: 2rem;
 }
 
 table {
