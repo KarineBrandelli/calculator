@@ -12,7 +12,11 @@ function App() {
     } else {
       setNum(num + input);
     }
-  }
+  };
+
+  function clear() {
+    setNum(0);
+  };
 
 
 
@@ -23,9 +27,7 @@ function App() {
         <tbody>
           <tr>
             <td>
-              <button
-                onClick={(e) => console.log(e.target.value)}
-                value="clear" >
+              <button onClick={ clear } >
                 C
               </button>
             </td>
