@@ -1,8 +1,23 @@
 import React, { useState } from 'react';
 import "./css/styles.css";
 
+const arrOperacoes = ['*', '/', '+', '.', '-'];
+
 function App() {
   const [input, setInput] = useState("");
+
+  function insereNum(val) {
+    setInput(input + val);
+  };
+
+  function insereOperacao(val) {
+    if (input === "" |
+        (arrOperacoes.includes(input[input.length - 1]) && arrOperacoes.includes(val)))
+    { return;
+    } else {
+      setInput(input + val);
+    }
+  };
 
   return (
     <div className="calculator-container">
