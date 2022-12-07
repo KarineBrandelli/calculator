@@ -47,17 +47,17 @@ function App() {
           </tr>
           <tr>
             <td>
-              <button onClick={inputNum} value={7}>
+              <button onClick={ inputNum } value={7}>
                 7
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={8}>
+              <button onClick={ inputNum } value={8}>
                 8
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={9}>
+              <button onClick={ inputNum } value={9}>
                 9
               </button>
             </td>
@@ -69,17 +69,17 @@ function App() {
           </tr>
           <tr>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={4}>
+              <button onClick={ inputNum } value={4}>
                 4
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={5}>
+              <button onClick={ inputNum } value={5}>
                 5
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={6}>
+              <button onClick={ inputNum } value={6}>
                 6
               </button>
             </td>
@@ -91,17 +91,17 @@ function App() {
           </tr>
           <tr>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={1}>
+              <button onClick={ inputNum } value={1}>
                 1
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={2}>
+              <button onClick={ inputNum } value={2}>
                 2
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value={3}>
+              <button onClick={ inputNum } value={3}>
                 3
               </button>
             </td>
@@ -118,7 +118,7 @@ function App() {
             <td colSpan="2">
               <button
                 className="zero"
-                onClick={(e) => console.log(e.target.value)}
+                onClick={ inputNum }
                 value={0} >
                 0
               </button>
