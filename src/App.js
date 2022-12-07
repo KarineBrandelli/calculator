@@ -4,6 +4,8 @@ import "./css/styles.css";
 
 function App() {
   const [num, setNum] = useState(0);
+  const [oldnum, setOldNum] = useState(0);
+  const [operator, setOperator] = useState();
 
   function inputNum(e) {
     var input = e.target.value;
@@ -20,6 +22,13 @@ function App() {
 
   function porcentage() {
     setNum(num / 100);
+  };
+
+  function operatorHandler(e) {
+    var operatorInput = e.target.value;
+    setOperator(operatorInput);
+    setOldNum(num);
+    setNum(num + operatorInput);
   };
 
 
@@ -41,12 +50,12 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="/" >
+              <button onClick={ operatorHandler } value="/" >
                 /
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="*" >
+              <button onClick={ operatorHandler }  value="*" >
                 *
               </button>
             </td>
@@ -68,7 +77,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="-" >
+              <button onClick={ operatorHandler }  value="-" >
                 -
               </button>
             </td>
@@ -90,7 +99,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="+" >
+              <button onClick={ operatorHandler }  value="+" >
                 +
               </button>
             </td>
@@ -130,7 +139,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="." >
+              <button onClick={ inputNum } value="." >
                 .
               </button>
             </td>
