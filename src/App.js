@@ -18,6 +18,10 @@ function App() {
     setNum(0);
   };
 
+  function porcentage() {
+    setNum(num / 100);
+  };
+
 
 
   return (
@@ -32,78 +36,78 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="%">
+              <button onClick={ porcentage } >
                 %
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="/">
+              <button onClick={(e) => console.log(e.target.value)} value="/" >
                 /
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="*">
+              <button onClick={(e) => console.log(e.target.value)} value="*" >
                 *
               </button>
             </td>
           </tr>
           <tr>
             <td>
-              <button onClick={ inputNum } value={7}>
+              <button onClick={ inputNum } value={7} >
                 7
               </button>
             </td>
             <td>
-              <button onClick={ inputNum } value={8}>
+              <button onClick={ inputNum } value={8} >
                 8
               </button>
             </td>
             <td>
-              <button onClick={ inputNum } value={9}>
+              <button onClick={ inputNum } value={9} >
                 9
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="-">
+              <button onClick={(e) => console.log(e.target.value)} value="-" >
                 -
               </button>
             </td>
           </tr>
           <tr>
             <td>
-              <button onClick={ inputNum } value={4}>
+              <button onClick={ inputNum } value={4} >
                 4
               </button>
             </td>
             <td>
-              <button onClick={ inputNum } value={5}>
+              <button onClick={ inputNum } value={5} >
                 5
               </button>
             </td>
             <td>
-              <button onClick={ inputNum } value={6}>
+              <button onClick={ inputNum } value={6} >
                 6
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value="+">
+              <button onClick={(e) => console.log(e.target.value)} value="+" >
                 +
               </button>
             </td>
           </tr>
           <tr>
             <td>
-              <button onClick={ inputNum } value={1}>
+              <button onClick={ inputNum } value={1} >
                 1
               </button>
             </td>
             <td>
-              <button onClick={ inputNum } value={2}>
+              <button onClick={ inputNum } value={2} >
                 2
               </button>
             </td>
             <td>
-              <button onClick={ inputNum } value={3}>
+              <button onClick={ inputNum } value={3} >
                 3
               </button>
             </td>
@@ -126,7 +130,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={(e) => console.log(e.target.value)} value=".">
+              <button onClick={(e) => console.log(e.target.value)} value="." >
                 .
               </button>
             </td>
@@ -135,6 +139,6 @@ function App() {
       </table>
     </div>
   );
-}
+};
 
 export default App;
