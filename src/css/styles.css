@@ -51,6 +51,9 @@ button {
   height: 3.5rem;
   width: 3.5rem;
   border: none;
+
+  transition-property: all;
+  transition-duration: 300ms;
 }
 
 button:hover {
