@@ -11,7 +11,7 @@
 ## Preview 🔎
 
 <p align="center">
-  <img src="" width=48%>
+  <img src="./assets/readme-img.png" width=65%>
 <p>
 
 <hr>
