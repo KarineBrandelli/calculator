@@ -3,7 +3,7 @@
 ## Descrição ✏️
 
 <p align="justify">
-
+  Esse projeto foi realizado com o objetivo de desenvolver meu conhecimento em React. O projeto representa uma calculadora com as operações básicas de soma, subtração, multiplicação, divisão e porcentagem.
 </p>
 
 <hr>
@@ -27,9 +27,3 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 - React
 
 <hr>
-
-## Recursos adicionais 💡
-
-<p align="justify">
-
-</p>
