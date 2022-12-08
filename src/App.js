@@ -7,7 +7,7 @@ function App() {
   const [operator, setOperator] = useState();
 
   function inputNum(e) {
-    var input = e.target.value;
+    let input = e.target.value;
     if (num === 0) {
       setNum(input);
     } else {
@@ -24,7 +24,7 @@ function App() {
   };
 
   function operatorHandler(e) {
-    var operatorInput = e.target.value;
+    let operatorInput = e.target.value;
     setOperator(operatorInput);
     setOldNum(num);
     setNum(0);
