@@ -2,17 +2,28 @@ import React, { useState } from 'react';
 import "./css/styles.css";
 
 function App() {
-  const [num, setNum] = useState(0);
-  const [oldnum, setOldNum] = useState(0);
+  const [num, setNum] = useState('');
+  const [oldnum, setOldNum] = useState('');
   const [operator, setOperator] = useState();
+  const [screen, setScreen] = useState('');
+  const expression = [];
 
   function inputNum(e) {
     let input = e.target.value;
-    if (num === 0) {
-      setNum(input);
+    setScreen(screen + input);
+
+    if (expression[1].includes('*', '-', '*', '/')) {
+      setNum(num + input)
     } else {
-      setNum(num + input);
+      setNum(oldnum + input)
     }
+    
+
+    // if (num === 0) {
+    //   setNum(input);
+    // } else {
+    //   setNum(num + input);
+    // }
   };
 
   function clear() {
@@ -27,10 +38,18 @@ function App() {
     let operatorInput = e.target.value;
     setOperator(operatorInput);
     setOldNum(num);
-    setNum(0);
+    setScreen(screen + operatorInput);
+    // setNum(0);
+
   };
 
   function calculate() {
+    expression[0] = oldnum;
+    expression[1] = operator;
+    expression[2] = num;
+    console.log(expression)
+    setScreen(eval(expression.join()))
+
     if (operator === "/") {
       setNum(parseFloat(oldnum) / parseFloat(num));
     } else if (operator === "X") {
@@ -40,11 +59,11 @@ function App() {
     } else if (operator === "+") {
       setNum(parseFloat(oldnum) + parseFloat(num));
     }
-  }
+  };
 
   return (
     <div className="calculator-container">
-      <div className="result">{num}</div>
+      <div className="result">{screen === '' ? '0' : screen}</div>
       <table>
         <tbody>
           <tr>
