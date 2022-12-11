@@ -34,18 +34,22 @@ function App() {
         <tbody>
           <tr>
             <td>
-              <button onClick={clear}>C</button>
+              <button onClick={clear}>
+                C
+              </button>
             </td>
             <td>
-              <button onClick={ porcentage }>%</button>
+              <button onClick={ porcentage }>
+                %
+              </button>
             </td>
             <td>
-              <button onClick={operatorHandler} value="/">
+              <button onClick={operatorHandler} >
                 /
               </button>
             </td>
             <td>
-              <button onClick={operatorHandler} value="*">
+              <button onClick={operatorHandler} >
                 *
               </button>
             </td>
@@ -67,7 +71,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={operatorHandler} value="-">
+              <button onClick={operatorHandler} >
                 -
               </button>
             </td>
@@ -89,7 +93,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={operatorHandler} value="+">
+              <button onClick={operatorHandler} >
                 +
               </button>
             </td>
