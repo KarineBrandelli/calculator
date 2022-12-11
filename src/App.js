@@ -29,7 +29,9 @@ function App() {
 
   return (
     <div className="calculator-container">
-      <div className="result">{screen === "" ? "0" : screen}</div>
+      <div className="result">
+        {screen === "" ? "0" : screen}
+      </div>
       <table>
         <tbody>
           <tr>
