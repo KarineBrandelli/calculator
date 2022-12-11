@@ -44,12 +44,12 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={operatorHandler} >
+              <button onClick={operatorHandler} value="/">
                 /
               </button>
             </td>
             <td>
-              <button onClick={operatorHandler} >
+              <button onClick={operatorHandler} value="*">
                 *
               </button>
             </td>
@@ -71,7 +71,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={operatorHandler} >
+              <button onClick={operatorHandler} value="-">
                 -
               </button>
             </td>
@@ -93,7 +93,7 @@ function App() {
               </button>
             </td>
             <td>
-              <button onClick={operatorHandler} >
+              <button onClick={operatorHandler} value="+">
                 +
               </button>
             </td>
