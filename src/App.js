@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/styles.css";
+import "./App.css";
 
 function App() {
   const [screen, setScreen] = useState("");
