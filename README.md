@@ -7,7 +7,7 @@
 ------
 ## Como acessar a página?
 
-Você pode acessar a aplicação utilizando um computador, tablet ou celular clicando [nesse]() link.
+Você pode acessar a aplicação utilizando um computador, tablet ou celular clicando [nesse](https://calculator-amber-mu-21.vercel.app/) link.
 
 Se você deseja clonar esse repositório em sua máquina, certifique-se que você tem o `nodejs` instalado e em seguida rode o seguinte comando no terminal para a instalação das dependências:
 
