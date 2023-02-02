@@ -1,29 +1,32 @@
-<h1 align="center"> Calculadora utilizando React </h1>
-
-## Descrição ✏️
-
-<p align="justify">
-  Esse projeto foi realizado com o objetivo de desenvolver meu conhecimento em React. O projeto representa uma calculadora com as operações básicas de soma, subtração, multiplicação, divisão e porcentagem.
-</p>
-
-<hr>
-
-## Preview 🔎
+<h1 align="center"> Calculadora 🔢 </h1>
 
 <p align="center">
-  <img src="./assets/readme-img.png" width=65%>
-<p>
+  Uma aplicação web de uma calculadora desenvolvida com React.js.
+</p>
 
-<hr>
+------
+## Como acessar a página?
 
-## Tecnologias ⚒️
+Você pode acessar a aplicação utilizando um computador, tablet ou celular clicando [nesse]() link.
 
-O projeto foi desenvolvido com as seguintes tecnologias:
+Se você deseja clonar esse repositório em sua máquina, certifique-se que você tem o `nodejs` instalado e em seguida rode o seguinte comando no terminal para a instalação das dependências:
 
-- HTML
-- CSS
-- JavaScript
-- DOM
-- React
+```bash
+npm install
+```
 
-<hr>
+Depois de instalar as dependências, rode o comando:
+```bash
+npm start
+```
+
+<p align="center">
+  <img alt="App Layout" src="https://user-images.githubusercontent.com/108953489/216391213-addb8004-c13a-4f26-a574-5de756fbe728.gif" width="80%">
+</p>
+
+## Tecnologias utilizadas
+
+Tecnologias utilizadas e suas documentações:
+
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [React](https://reactjs.org/)
